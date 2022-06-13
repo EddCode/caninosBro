@@ -8,10 +8,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: Deploying to vercel
-        uses: actions/vercel-deployment@0.5.1
+        uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
-          vercelToken: ${{ secrets.VERCEL_TOKEN }}
-          vercelOrgId: ${{ secrets.VERCEL_ORG_ID }}
-          vercelProjectId: ${{ secrets.VERCEL_PROJECT_ID }}
-          githubToken: ${{ secrets.PAT }}
-          sourceDirectory: "./"
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
