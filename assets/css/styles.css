@@ -13,6 +13,10 @@
   --secondary-font: 'Alegreya', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, body {
   font-size: 16px;
   font-family: var(--primary-font);
@@ -170,7 +174,11 @@ figure img {
  * */
 .services {
   display: grid;
-  grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(22rem, 1fr));
+}
+
+.service-item {
+  width: 100%;
 }
 
 .service-item-image {
@@ -224,6 +232,7 @@ figure img {
  * */
  .about > div, .what-we-do > div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 5rem auto;
   width: 80%;
@@ -232,6 +241,7 @@ figure img {
 .about-text, .what-we-do-text {
   width: 25rem;
   margin-right: 2rem;
+  margin-bottom: 3em;
 }
 
 .about-text p, .what-we-do-text p {
@@ -256,6 +266,10 @@ figure img {
 .what-we-do {
   background-color: var(--color-ligth-gray);
   padding: 1.5rem 0;
+}
+
+.what-we-do-text {
+  margin-top: 3em;
 }
 
 /**
@@ -351,7 +365,11 @@ figure img {
 .history-btn {
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-content: space-between;
+
+  height: 7em;
 }
 
 .history-item {
@@ -374,6 +392,7 @@ figure img {
 
 footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: var(--color-middle);
   padding: 1.5rem 5rem;
@@ -383,6 +402,7 @@ footer {
   color: white;
   font-family: var(--secondary-font);
   line-height: 1.4rem;
+  margin-top: 3em;
 }
 
 .mapouter {
