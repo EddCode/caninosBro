@@ -10,224 +10,233 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="preload stylesheet" href="assets/css/desktop.css" as="styles">
-  <link rel="preload stylesheet" media="screen and (max-width:400px)" href="assets/css/mobile.css" as="styles">
-
+  <link rel="preload stylesheet" href="assets/css/styles.css" as="styles">
 
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Bree+Serif&display=swap" rel="stylesheet">
 
+  <script src="assets/js/index.js" type="module"></script>
 </head>
 <body>
 
-  <button class="btn">Hablemos</button>
-  <head class="hero">
-    <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
+  <header class="hero">
+    <div class="hero-header">
+      <figure class="hero-logo">
+        <img src="" alt="caninosBro logo" srcset="">
+      </figure>
+      <div class="hero-action">
+        <a href="https://api.whatsapp.com/send?phone=3316596411" target="_new" class="btn-whatsapp">
+          <button class="btn float-btn btn-call">
+            Hablemos
+          </button>
+        </a>
+      </div>
+    </div>
 
     <div class="hero-text">
-      <h1>Educar o adiestrar a nuestros perros sin mutilar su espiritu y nobleza</h1>
-      <h2>
+      <h1 class="title">Educar o adiestrar a nuestros perros sin mutilar su espiritu y nobleza</h1>
+      <h2 class="subtitle">
         Entrenamos a tu mascota.
       </h2>
 
       <div class="hero-banner">
+        <figure>
+          <img src="assets/images/dog-human.png" alt="" srcset="">
+        </figure>
+        <figure>
+          <img src="assets/images/dog-2.png" alt="" srcset="">
+        </figure>
+        <figure>
+          <img src="assets/images/win.png" alt="" srcset="">
+        </figure>
+        <figure>
+          <img src="assets/images/dog-6.png" alt="" srcset="">
+        </figure>
       </div>
 
       <div class="hero-buttons">
-        <button class="btn">Que Hacemos?</button>
-        <button class="btn">Hablemos</button>
+        <button class="btn mr-1">Que Hacemos?</button>
+        <a href="https://api.whatsapp.com/send?phone=3316596411" target="_new" class="btn-whatsapp">
+          <button class="btn ml-1 btn-call">Hablemos</button>
+        </a>
       </div>
 
     </div>
-  </head>
+  </header>
 
   <section class="services">
     <div class="service-item">
       <div class="service-item-text">
-        <h3>
-          <div class="service-item-title"></div>
-          <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
+        <h3 class="service-item-title">
+          Obediencia basica/avanzada
         </h3>
+        <figure class="service-item-image">
+          <img src="assets/images/obediencia.png" alt="">
+        </figure>
       </div>
     </div>
     <div class="service-item">
       <div class="service-item-text">
-        <h3>
-          <div class="service-item-title"></div>
-          <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
+        <h3 class="service-item-title">
+          Problemas de conducta
         </h3>
+        <figure class="service-item-image">
+          <img src="assets/images/conducta.png" alt="">
+        </figure>
       </div>
     </div>
     <div class="service-item">
       <div class="service-item-text">
-        <h3>
-          <div class="service-item-title"></div>
-          <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
-        </h3>
+        <h3 class="service-item-title">Hotel canino campestre</h3>
+        <figure class="service-item-image">
+          <img src="assets/images/relax.png" alt="">
+        </figure>
       </div>
     </div>
     <div class="service-item">
       <div class="service-item-text">
-        <h3>
-          <div class="service-item-title"></div>
-          <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
-        </h3>
+        <h3 class="service-item-title">Venta de cachorros y perros entrenados</h3>
+        <figure class="service-item-image">
+          <img src="assets/images/dog-1.png" alt="">
+        </figure>
       </div>
     </div>
     <div class="service-item">
       <div class="service-item-text">
-        <h3>
-          <div class="service-item-title"></div>
-          <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
-        </h3>
+        <h3 class="service-item-title">Guardia de proteccion</h3>
+        <figure class="service-item-image">
+          <img src="assets/images/guardia.png" alt="">
+        </figure>
       </div>
     </div>
     <div class="service-item">
       <div class="service-item-text">
-        <h3>
-          <div class="service-item-title"></div>
-          <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
-        </h3>
+        <h3 class="service-item-title">Venta de alimento, accesorios y equipo</h3>
+        <figure class="service-item-image">
+          <img src="assets/images/food.png" alt="">
+        </figure>
       </div>
     </div>
   </section>
 
-  <section class="service-description">
-    <h2>Nuestros Servicios</h2>
-    <div class="service-description-text">
-      <p>
-        ¿Tienes un pequeño monstruo peludo en casa y no sabes cómo controlarlo?
-        ¿Desobedece tus órdenes o incluso te desafía cuando tratas de corregirlo?
-      </p>
-      <p>
-        Mi nombre es Jorge  Ortega apasionado por los animales,
-        mi objetivo a lograr con cada mascotas es que tengan una educación adecuada
-        para que ellos puedan sacar lo mejor de si,
-        para que la familia de la mascota estén contentas y lo primordial que el perro pueda desarrollar
-        sus habilidades al máximo .
-      </p>
-      <button class="btn btn-acent">Hablemos</button>
-    </div>
-    <figure class="service-description-img">
-      <object class="hero-image" data="assets/img/hero.svg" type="image/svg+xml"></object>
-    </figure>
-  </section>
-
-  <section class="what-we-do">
+  <section class="about">
     <div>
-      <h4>
-        PROGRAMAS DE ADIESTRAMIENTO
-      </h4>
+      <div class="about-text">
+        <h2 class="title">Nuestros Servicios</h2>
+        <p>
+          ¿Tienes un pequeño monstruo peludo en casa y no sabes cómo controlarlo?
+          ¿Desobedece tus órdenes o incluso te desafía cuando tratas de corregirlo?
+        </p>
+        <p>
+          Mi nombre es Jorge  Ortega apasionado por los animales,
+          mi objetivo a lograr con cada mascotas es que tengan una educación adecuada
+          para que ellos puedan sacar lo mejor de si,
+          para que la familia de la mascota estén contentas y lo primordial que el perro pueda desarrollar
+          sus habilidades al máximo .
+        </p>
+
+        <a href="https://api.whatsapp.com/send?phone=3316596411" target="_new" class="btn-whatsapp">
+          <button class="btn btn-accent">Hablemos</button>
+        </a>
+      </div>
+      <figure class="about-image">
+        <img src="assets/images/dog-7.png" alt="" srcset="">
+      </figure>
     </div>
-    <p>
-      Cursos desde la etapa inicial de tu cachorro hasta la resolución
-      de problemas de comportamiento de perros adultos.
-    </p>
-    <p>
-      Si tu perro tira de la correa al momento de pasear, pierde el control en cuanto ve a otro perro,
-      hace del baño por todas partes, no se está quieto dentro de casa,
-      tenemos los cursos ideales para el y para ti!
-    </p>
   </section>
 
-  <section class="work-service">
-    <div class="grid">
-      <div class="grid-item">
-        <figure class="grid-item-image">
-          <img src="" alt="" srcset="">
-        </figure>
-        <div class="grid-item-title">
-          <h3></h3>
-        </div>
-        <div class="grid-item-text">
-          <p></p>
-        </div>
-      </div>
-      <div class="grid-item">
-        <figure class="grid-item-image">
-          <img src="" alt="" srcset="">
-        </figure>
-        <div class="grid-item-title">
-          <h3></h3>
-        </div>
-        <div class="grid-item-text">
-          <p></p>
-        </div>
-      </div>
-      <div class="grid-item">
-        <figure class="grid-item-image">
-          <img src="" alt="" srcset="">
-        </figure>
-        <div class="grid-item-title">
-          <h3></h3>
-        </div>
-        <div class="grid-item-text">
-          <p></p>
-        </div>
-      </div>
-      <div class="grid-item">
-        <figure class="grid-item-image">
-          <img src="" alt="" srcset="">
-        </figure>
-        <div class="grid-item-title">
-          <h3></h3>
-        </div>
-        <div class="grid-item-text">
-          <p></p>
-        </div>
-      </div>
-      <div class="grid-item">
-        <figure class="grid-item-image">
-          <img src="" alt="" srcset="">
-        </figure>
-        <div class="grid-item-title">
-          <h3></h3>
-        </div>
-        <div class="grid-item-text">
-          <p></p>
-        </div>
-      </div>
-      <div class="grid-item">
-        <figure class="grid-item-image">
-          <img src="" alt="" srcset="">
-        </figure>
-        <div class="grid-item-title">
-          <h3></h3>
-        </div>
-        <div class="grid-item-text">
-          <p></p>
-        </div>
+  <section id="what-we-do" class="what-we-do">
+    <div>
+      <iframe
+        src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FEscuelaCaninoBros%2Fvideos%2F198219922261660%2F&show_text=false&width=267&t=0"
+        width="267"
+        height="476"
+        style="border:none;overflow:hidden;border-radius:10px;box-shadow=0px 0px 10px rgba(0,0,0,0.5);"
+        scrolling="no"
+        frameborder="0"
+        allowFullScreen="true">
+      </iframe>
+      <div class="what-we-do-text">
+        <h4 class="title">
+          Programas de adiestramiento
+        </h4>
+        <p>
+          Cursos desde la etapa inicial de tu cachorro hasta la resolución
+          de problemas de comportamiento de perros adultos.
+        </p>
+        <p>
+          Si tu perro tira de la correa al momento de pasear, pierde el control en cuanto ve a otro perro,
+          hace del baño por todas partes, no se está quieto dentro de casa,
+          tenemos los cursos ideales para el y para ti!
+        </p>
       </div>
     </div>
-    <button class="btn btn-accent">Hablemos</button>
   </section>
 
   <section class="training">
-    <h4>Perrros Entrenados</h4>
+    <h4 class="subtitle">Perrros Entrenados</h4>
     <div class="dogs-photos">
       <figure>
-        <img src="" alt="" srcset="">
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
       </figure>
       <figure>
-        <img src="" alt="" srcset="">
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
       </figure>
       <figure>
-        <img src="" alt="" srcset="">
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
+      </figure>
+      <figure>
+        <img src="https://fergodog.com/wp-content/uploads/2021/08/IMG_4331-768x512.jpg" alt="" srcset="">
       </figure>
     </div>
-    <p>
-      Ring I - 10 perros
-      Ring II - 6 perros
-      Ring III - 1 perro
-    </p>
-    <p>
-      PP 1 - 4 perros
-      PP 2 - 2 perros
-      PP 3 - 1 perro
-    </p>
+    <div class="dogs-graduated">
+      <p>
+        <span>Ring I - 10 perros</span>
+        <span>Ring II - 6 perros</span>
+        <span>Ring III - 1 perro</span>
+      </p>
+      <p>
+        <span>PP 1 - 4 perros</span>
+        <span>PP 2 - 2 perros</span>
+        <span>PP 3 - 1 perro</span>
+      </p>
+    </div>
+    <a href="https://api.whatsapp.com/send?phone=3316596411" target="_new" class="btn-whatsapp">
+      <button class="btn btn-accent">Hablemos</button>
+    </a>
   </section>
 
   <section class="history">
-    <h4>Nuestra Trayectoria</h4>
+    <h4 class="title">Nuestra Trayectoria</h4>
     <div class="history-grid">
       <div class="history-item">
         <h5></h5>
@@ -254,14 +263,26 @@
   </section>
 
   <footer>
-    <div class="map"></div>
+    <div class="mapouter"><div class="gmap_canvas">
+        <iframe
+          width="280"
+          height="280"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=Bosques%20de%20Tonala%20C.P.45416%20Tonala,%20Jalisco&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"></iframe>
+      </div>
+    </div>
     <div class="info">
       <p class="location">
-        Ubicación
-        Andador Nogal  # 114
-        Col. Bosques de Tonala
-        C.P.45416
-        Tonala, Jalisco
+        Ubicación <br>
+        Andador Nogal  # 114 <br>
+        Col. Bosques de Tonala <br>
+        C.P.45416 <br>
+        Tonala, Jalisco <br>
+        <br>
 
         Tel: 33 1659 6411
       </p>
