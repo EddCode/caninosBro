@@ -1,0 +1,93 @@
+.history {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.history-item {
+  padding: 1.5rem;
+}
+
+.history-item p{
+  font-family: var(--secondary-font);
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.history-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+
+.timeline {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  max-width: 1200px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  background: url('../images/dog-paw.svg')  80% 200px repeat-y;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+}
+
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -16px;
+}
+
+.content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+}

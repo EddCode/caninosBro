@@ -1,12 +1,3 @@
-const init = _ => {
-  const scrollFromTop = window.pageYOffset
-  console.log(scrollFromTop)
+const navigate = (url) => {
+  window.location.href = `${url}`
 }
-
-init()
-
-const listener = _ => {
-  init()
-}
-
-window.addEventListener('scroll', listener)
