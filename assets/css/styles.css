@@ -126,13 +126,13 @@
   border-radius: 1rem;
 }
 
-.dogs-photos figure:nth-child(2n) {
+.dogs-photos figure.feature {
   grid-column-end: span 2;
   grid-row-end: span 2;
 }
 
-.dogs-photos figure:nth-child(5n) {
-  grid-row-end: span 2;
+.dogs-photos figure.feature-col{
+  grid-column-end: span 2;
 }
 
 .dogs-photos figure {
