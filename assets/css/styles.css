@@ -252,3 +252,8 @@ footer {
   border-radius: 1rem;
 }
 
+@media (max-width: 500px) {
+  .dogs-photos {
+    grid-template-columns: auto;
+  }
+}
