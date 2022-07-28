@@ -30,12 +30,12 @@
 .timeline::after {
   content: '';
   position: absolute;
-  width: 20px;
+  width: 45px;
   top: 0;
   bottom: 0;
-  left: 50%;
   margin-left: -3px;
-  background: url('../images/dog-paw.svg')  80% 200px repeat-y;
+  left: 48%;
+  background: url('../images/caminoHuella2.png') 130px;
 }
 
 .container {
